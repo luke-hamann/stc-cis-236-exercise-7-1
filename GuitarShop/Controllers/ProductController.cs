@@ -48,6 +48,11 @@ namespace GuitarShop.Controllers
             ViewBag.Categories = categories;
             ViewBag.SelectedCategoryName = id;
 
+            if (id == "Strings")
+            {
+                ViewBag.SelectedCategoryName = "Strings";
+            }
+
             // bind products to view
             return View(products);
         }
